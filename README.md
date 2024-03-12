@@ -1,4 +1,8 @@
-<include a CircleCI status badge, here>
+[![chemparidhi1987](https://app.circleci.com/pipelines/github/chemparidhi1987/project-ml-microservice-kubernetes?branch=main.svg?style=svg)](https://app.circleci.com/pipelines/github/chemparidhi1987/project-ml-microservice-kubernetes?branch=main)
+
+[![kcemenike](https://circleci.com/gh/kcemenike/operationalize-ml.svg?style=svg)](https://app.circleci.com/pipelines/github/kcemenike/operationalize-ml)
+
+[![chemparidhi1987](https://circleci.com/gh/chemparidhi1987/project-ml-microservice-kubernetes.svg?style=svg)](https://app.circleci.com/pipelines/github/chemparidhi1987/project-ml-microservice-kubernetes?branch=main)
 
 ## Project Overview
 
