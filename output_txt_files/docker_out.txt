@@ -1,0 +1,76 @@
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ sh run_docker.sh > ./output_txt_files/docker_out.txt
+[+] Building 67.7s (10/10) FINISHED                                                                                                                                                                                                                            docker:default
+ => [internal] load .dockerignore                                                                                                                                                                                                                                        0.3s
+ => => transferring context: 2B                                                                                                                                                                                                                                          0.0s
+ => [internal] load build definition from Dockerfile                                                                                                                                                                                                                     0.3s
+ => => transferring dockerfile: 560B                                                                                                                                                                                                                                     0.1s
+ => [internal] load metadata for docker.io/library/python:3.7                                                                                                                                                                                                            0.5s
+ => [auth] library/python:pull token for registry-1.docker.io                                                                                                                                                                                                            0.0s
+ => [1/4] FROM docker.io/library/python:3.7@sha256:eedf63967cdb57d8214db38ce21f105003ed4e4d0358f02bedc057341bcf92a0                                                                                                                                                     30.6s
+ => => resolve docker.io/library/python:3.7@sha256:eedf63967cdb57d8214db38ce21f105003ed4e4d0358f02bedc057341bcf92a0                                                                                                                                                      0.1s
+ => => sha256:debce5f9f3a9709885f7f2ad3cf41f036a3b57b406b27ba3a883928315787042 64.11MB / 64.11MB                                                                                                                                                                         3.5s
+ => => sha256:eedf63967cdb57d8214db38ce21f105003ed4e4d0358f02bedc057341bcf92a0 1.86kB / 1.86kB                                                                                                                                                                           0.0s
+ => => sha256:2011a37d2a08fe83dd9ff923e0f83bfd7290152e2e6afe359bde1453170d9bdc 2.01kB / 2.01kB                                                                                                                                                                           0.0s
+ => => sha256:16d93ae3411be3db255b6b52fdfc155a0dff0f697c2e4e3d862caf8d978830b2 8.13kB / 8.13kB                                                                                                                                                                           0.0s
+ => => sha256:167b8a53ca4504bc6aa3182e336fa96f4ef76875d158c1933d3e2fa19c57e0c3 49.56MB / 49.56MB                                                                                                                                                                         2.0s
+ => => sha256:b47a222d28fa95680198398973d0a29b82a968f03e7ef361cc8ded562e4d84a3 24.03MB / 24.03MB                                                                                                                                                                         2.0s
+ => => sha256:1d7ca7cd2e066ae77ac6284a9d027f72a31a02a18bfc2a249ef2e7b01074338b 211.04MB / 211.04MB                                                                                                                                                                       8.2s
+ => => sha256:ff3119008f58beef8f336fa833707b0fe914db94ca6b7bb55abe3e1bf2b1ad56 6.39MB / 6.39MB                                                                                                                                                                           2.4s
+ => => extracting sha256:167b8a53ca4504bc6aa3182e336fa96f4ef76875d158c1933d3e2fa19c57e0c3                                                                                                                                                                                8.2s
+ => => sha256:c2423a76a32b7ffb2ee7bb6d1e0c74bb1811237eddcb3200594daf7a52d4f378 14.70MB / 14.70MB                                                                                                                                                                         3.8s
+ => => sha256:e1c98ca4926a91839805ce76d76a70225e303007331ee60f45dfabbbf55fd8c8 244B / 244B                                                                                                                                                                               4.3s
+ => => sha256:3b62c8e1d79b6554a8bffcf196ff5dd822858c179f1f8dc6f0c74a288859a6fb 2.85MB / 2.85MB                                                                                                                                                                           4.6s
+ => => extracting sha256:b47a222d28fa95680198398973d0a29b82a968f03e7ef361cc8ded562e4d84a3                                                                                                                                                                                1.0s
+ => => extracting sha256:debce5f9f3a9709885f7f2ad3cf41f036a3b57b406b27ba3a883928315787042                                                                                                                                                                                4.1s
+ => => extracting sha256:1d7ca7cd2e066ae77ac6284a9d027f72a31a02a18bfc2a249ef2e7b01074338b                                                                                                                                                                               11.5s
+ => => extracting sha256:ff3119008f58beef8f336fa833707b0fe914db94ca6b7bb55abe3e1bf2b1ad56                                                                                                                                                                                0.4s
+ => => extracting sha256:c2423a76a32b7ffb2ee7bb6d1e0c74bb1811237eddcb3200594daf7a52d4f378                                                                                                                                                                                0.9s
+ => => extracting sha256:e1c98ca4926a91839805ce76d76a70225e303007331ee60f45dfabbbf55fd8c8                                                                                                                                                                                0.0s
+ => => extracting sha256:3b62c8e1d79b6554a8bffcf196ff5dd822858c179f1f8dc6f0c74a288859a6fb                                                                                                                                                                                0.3s
+ => [internal] load build context                                                                                                                                                                                                                                        7.8s
+ => => transferring context: 144.15MB                                                                                                                                                                                                                                    7.3s
+ => [2/4] WORKDIR /app                                                                                                                                                                                                                                                   0.1s
+ => [3/4] COPY . app.py /app/                                                                                                                                                                                                                                            1.8s
+ => [4/4] RUN pip install --no-cache-dir --upgrade pip &&     pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt                                                                                                                             27.2s
+ => exporting to image                                                                                                                                                                                                                                                   6.9s 
+ => => exporting layers                                                                                                                                                                                                                                                  6.9s 
+ => => writing image sha256:3813d5d3a6647c29885b73d8cd388887f2543f4e4f98cb1ca57b33e1b30d5d13                                                                                                                                                                             0.0s 
+ => => naming to docker.io/library/microproject                                                                                                                                                                                                                          0.0s 
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)                                                                                                                                                                                                                       
+ * Restarting with stat                                                                                                                                                                                                                                                       
+ * Debugger is active!
+ * Debugger PIN: 997-623-748
+172.17.0.1 - - [12/Mar/2024 10:33:00] "GET / HTTP/1.1" 200 -
+[2024-03-12 10:33:51,797] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2024-03-12 10:33:51,817] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2024-03-12 10:33:51,829] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2024-03-12 10:33:51,833] INFO in app: prediction: [20.35373177134412]
+172.17.0.1 - - [12/Mar/2024 10:33:51] "POST /predict HTTP/1.1" 200 -
+[2024-03-12 10:34:00,096] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2024-03-12 10:34:00,110] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2024-03-12 10:34:00,122] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2024-03-12 10:34:00,126] INFO in app: prediction: [20.35373177134412]
+172.17.0.1 - - [12/Mar/2024 10:34:00] "POST /predict HTTP/1.1" 200 -
+^C
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $
+
+
+(.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master)$ ./make_prediction.sh
+
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
